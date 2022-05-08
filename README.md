@@ -5,6 +5,8 @@ This application helps to view various data related to contests/data/blogs for t
 ![image](https://user-images.githubusercontent.com/40036013/167294822-b4d4f22c-fab7-447a-8eac-97395bd14a79.png)
 
 
+More functionalities will be added soon!
+
 
 
 # Getting Started with Create React App
