@@ -1,16 +1,22 @@
 import React from "react";
 import Back from "./Back";
-import { useState, useEffect } from "react";
-import axios from "axios";
 import User from "./User";
-import ContestInfo from "./ContestInfo";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
-function UpcommingContest() {
+function UserInfo() {
+    const handle = 'Tourist'
+    const name = `Genady Korotovech`
+    const country = `Belarus`
+    const rating = `3814`
+    const rank = `legendary`
+    var data;
+    var arr = []
 
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        axios.get(`https://codeforces.com/api/contest.list`)
+        axios.get(`https://codeforces.com/api/user.ratedList?activeOnly=true&includeRetired=false`)
             .then((res) => {
                 console.log(res.data.result)
                 const arr = []
@@ -30,10 +36,10 @@ function UpcommingContest() {
     return (
         <>
             <div className="page-head">
-                Upcomming / Past Contests
+                Top 10 rated user
             </div>
             {posts.map(posts => (
-                <ContestInfo key={posts.id} info={posts}/>
+                <User key={posts.handle} info={posts}/>
             ))}
             <div className="page-head">
                 <Back />
@@ -43,4 +49,4 @@ function UpcommingContest() {
     )
 }
 
-export default UpcommingContest
+export default UserInfo
