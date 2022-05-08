@@ -1,3 +1,12 @@
+This application helps to view various data related to contests/data/blogs for the codeforces.com platform. You can explore the different part of the application. Below is few screen shot of the application. For instruction to install and run the app locally, please scroll below the screenshots.
+
+![image](https://user-images.githubusercontent.com/40036013/167294785-26f7f868-6cc0-4554-981d-76b6036343a3.png)
+
+![image](https://user-images.githubusercontent.com/40036013/167294822-b4d4f22c-fab7-447a-8eac-97395bd14a79.png)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
