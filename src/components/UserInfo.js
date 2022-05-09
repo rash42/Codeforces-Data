@@ -14,16 +14,19 @@ function UserInfo() {
     var arr = []
 
     const [posts, setPosts] = useState([])
+    const [loaded, setLoaded] = useState(false)
 
     useEffect(() => {
+        setLoaded(false)
         axios.get(`https://codeforces.com/api/user.ratedList?activeOnly=true&includeRetired=false`)
             .then((res) => {
                 console.log(res.data.result)
                 const arr = []
-                for(var i = 0; i < 10; i++){
+                for (var i = 0; i < 10; i++) {
                     arr.push(res.data.result[i]);
                 }
                 setPosts(arr)
+                setLoaded(true)
             })
             .catch(err => {
                 console.log(err)
@@ -38,9 +41,11 @@ function UserInfo() {
             <div className="page-head">
                 Top 10 rated user
             </div>
-            {posts.map(posts => (
-                <User key={posts.handle} info={posts}/>
-            ))}
+            {loaded ? posts.map(posts => (
+                <User key={posts.handle} info={posts} />
+            )) : <div class="spinner-border text-light" role="status">
+                <span class="sr-only"></span>
+            </div>}
             <div className="page-head">
                 <Back />
             </div>
