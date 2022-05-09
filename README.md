@@ -4,7 +4,7 @@ This application helps to view various data related to contests/data/blogs for t
 
 ![image](https://user-images.githubusercontent.com/40036013/167294822-b4d4f22c-fab7-447a-8eac-97395bd14a79.png)
 
-![image](https://user-images.githubusercontent.com/40036013/167430964-65845e21-9671-42a1-ab1f-b3086b3834b6.png)
+![image](https://user-images.githubusercontent.com/40036013/167431212-c7ffbadf-f2ea-4818-a94d-e34c589b172e.png)
 
 
 More functionalities will be added soon!
