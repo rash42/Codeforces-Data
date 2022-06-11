@@ -5,8 +5,8 @@ import Box from '@mui/material/Box';
 
 
 function Row() {
-    const text_contest = `To get the details for all the past and upcomming contest click on the below button`;
-    const text_user = `To search any user or to get any information about any user click on the below button`;
+    // const text_contest = `To get the details for all the past and upcomming contest click on the below button`;
+    // const text_user = `To search any user or to get any information about any user click on the below button`;
     const text_problem = `This section will show the different problem set for all the contest`;
     const text_blogs = `If you are interested in recent happenings in the codeforces website or want to learn something then click on the below button`
 
