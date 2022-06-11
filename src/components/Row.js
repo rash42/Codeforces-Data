@@ -12,8 +12,8 @@ function Row() {
 
     return (
         <Box sx={{ flexGrow: 1, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly' }}>
-            <Tiles name='Contests' text={text_contest} link='contests'></Tiles>
-            <Tiles name='User info' text={text_user} link='user'></Tiles>
+            {/* <Tiles name='Contests' text={text_contest} link='contests'></Tiles>
+            <Tiles name='User info' text={text_user} link='user'></Tiles> */}
             <Tiles name='Problem set' text={text_problem} link='problems'></Tiles>
             <Tiles name='Blogs' text={text_blogs} link='blogs'></Tiles>
         </Box>
