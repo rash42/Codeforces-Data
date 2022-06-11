@@ -9,10 +9,7 @@ import HeaderBar from './HeaderBar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useSelector } from "react-redux";
 import SideBar from './SideBar';
-import { Divider } from '@mui/material';
-import { styled, useTheme } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
-import { minHeight } from '@mui/system';
+import { styled } from '@mui/material/styles';
 
 const drawerWidth = 240;
 
@@ -48,7 +45,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 export default function Main() {
     const isDrawerOpen = useSelector((state) => state.drawer.isOpen)
-    const width = isDrawerOpen ? 270 : 0
     const themeMode = useSelector((state) => state.mode.type)
     const lightMode = createTheme({
         palette: {

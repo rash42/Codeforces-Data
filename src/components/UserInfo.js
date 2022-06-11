@@ -5,13 +5,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 function UserInfo() {
-    const handle = 'Tourist'
-    const name = `Genady Korotovech`
-    const country = `Belarus`
-    const rating = `3814`
-    const rank = `legendary`
-    var data;
-    var arr = []
+
 
     const [posts, setPosts] = useState([])
     const [loaded, setLoaded] = useState(false)

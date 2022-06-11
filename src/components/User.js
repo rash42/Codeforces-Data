@@ -8,7 +8,7 @@ function User(props) {
             <div className="card-body container">
                 <div className="row">
                     {/* <div className="col-3"> */}
-                        <img className="col-3" src={props.info.titlePhoto}></img>
+                        <img className="col-3" src={props.info.titlePhoto} alt={props.info.handle}></img>
                     {/* </div> */}
                     <div className="col-9">
                         <h5 className="card-title">{props.info.firstName} {props.info.lastName}</h5>

@@ -3,16 +3,12 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import store from '../app/store'
 import { modeAction } from '../features/mode/modeSlice'
 import { useSelector, useDispatch } from 'react-redux'
 import { CssBaseline, Divider } from "@mui/material";
 import { drawerAction } from '../features/drawer/drawerSlice'
-import InputAdornment from '@mui/material/InputAdornment';
-import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
@@ -27,7 +23,6 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import AppsIcon from '@mui/icons-material/Apps';
 import ToggleButton from '@mui/material/ToggleButton';
 import NightlightIcon from '@mui/icons-material/Nightlight';
-import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 
 
 
@@ -92,7 +87,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 function HeaderBar() {
 
-  const isDrawerOpen = useSelector((state) => state.drawer.isOpen)
+
   const themeMode = useSelector((state) => state.mode.type)
   const dispatch = useDispatch()
   //dispatch(modeAction.toggleMode())
