@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Provider store={store}>
         <Main></Main>
+        
       </Provider>
 
     </div >
