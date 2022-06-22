@@ -1,1 +1,1 @@
-Please visit https://github.com/rash42/codeforces-data2 for the new repository.
+Please visit https://github.com/rash42/codeforce-data2 for the new repository.
